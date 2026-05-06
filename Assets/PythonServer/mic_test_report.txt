@@ -1,0 +1,103 @@
+=== MICROPHONE SAMPLE RATE TEST REPORT ===
+Time: 2026-04-16 13:55:32
+
+=== INPUT DEVICES ===
+[0] Microsoft Sound Mapper - Input
+    max_input_channels: 2
+    default_samplerate: 44100.0
+
+[1] Microphone Array (Intel® Smart 
+    max_input_channels: 4
+    default_samplerate: 44100.0
+
+[2] Headset (HY01)
+    max_input_channels: 1
+    default_samplerate: 44100.0
+
+[6] Primary Sound Capture Driver
+    max_input_channels: 2
+    default_samplerate: 44100.0
+
+[7] Microphone Array (Intel® Smart Sound Technology for Digital Microphones)
+    max_input_channels: 4
+    default_samplerate: 44100.0
+
+[8] Headset (HY01)
+    max_input_channels: 1
+    default_samplerate: 44100.0
+
+[14] Headset (HY01)
+    max_input_channels: 1
+    default_samplerate: 16000.0
+
+[15] Microphone Array (Intel® Smart Sound Technology for Digital Microphones)
+    max_input_channels: 2
+    default_samplerate: 48000.0
+
+[17] Stereo Mix (Realtek HD Audio Stereo input)
+    max_input_channels: 2
+    default_samplerate: 44100.0
+
+[19] Microphone (Realtek HD Audio Mic input)
+    max_input_channels: 2
+    default_samplerate: 44100.0
+
+[23] Input (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(HY01))
+    max_input_channels: 1
+    default_samplerate: 16000.0
+
+[25] Headset 1 (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(HY01))
+    max_input_channels: 1
+    default_samplerate: 16000.0
+
+[26] Headset 2 (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(HY01))
+    max_input_channels: 1
+    default_samplerate: 16000.0
+
+[29] Microphone Array 1 ()
+    max_input_channels: 2
+    default_samplerate: 48000.0
+
+[30] Microphone Array 2 ()
+    max_input_channels: 2
+    default_samplerate: 48000.0
+
+[31] Microphone Array 3 ()
+    max_input_channels: 4
+    default_samplerate: 16000.0
+
+[32] Microphone Array 4 ()
+    max_input_channels: 4
+    default_samplerate: 16000.0
+
+
+=== SELECTED DEVICE ===
+Device index: 14
+Device name: Headset (HY01)
+Default samplerate: 16000.0
+
+=== SUPPORTED SAMPLE RATE TEST ===
+[FAIL] 8000 Hz -> Error opening InputStream: Invalid sample rate [PaErrorCode -9997]
+[OK] 16000 Hz
+[FAIL] 22050 Hz -> Error opening InputStream: Invalid sample rate [PaErrorCode -9997]
+[FAIL] 32000 Hz -> Error opening InputStream: Invalid sample rate [PaErrorCode -9997]
+[FAIL] 44100 Hz -> Error opening InputStream: Invalid sample rate [PaErrorCode -9997]
+[FAIL] 48000 Hz -> Error opening InputStream: Invalid sample rate [PaErrorCode -9997]
+
+=== RECORD TEST RESULT ===
+Record samplerate: 16000
+Recorded samples: 48000
+Expected samples: 48000
+RMS volume: 0.06818094104528427
+Saved wav file: mic_test_16000hz.wav
+
+=== CONCLUSION ===
+- Device được chọn: Headset (HY01)
+- Default samplerate báo bởi driver: 16000.0
+- Sample rates test OK: [16000]
+- Sample rate ghi thử: 16000
+- RMS volume: 0.06818094104528427
+- Khuyến nghị dùng 16000 Hz cho STT để nhẹ và ổn định.

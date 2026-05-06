@@ -1,0 +1,10 @@
+{
+  "speech_text": "Tôi đã xác định điểm đến là bãi xe. Tôi sẽ hướng dẫn bạn di chuyển đến đó.",
+  "action": "guide_route",
+  "target_location": "bai_xe",
+  "locations": [],
+  "iot_device": null,
+  "iot_command": null,
+  "camera_id": null,
+  "confidence": 0.9
+}

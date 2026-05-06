@@ -1,0 +1,7 @@
+flask
+numpy
+soundfile
+faster-whisper
+edge-tts
+groq
+scipy

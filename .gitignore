@@ -104,3 +104,11 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+CameraFramesRuntime/
+*.mp4
+*.zip
+*.rar
+*.7z
+*.exe
+*_Data/

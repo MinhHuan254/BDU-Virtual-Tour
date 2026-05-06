@@ -1,0 +1,54 @@
+=== AUDIO QUALITY ANALYSIS REPORT ===
+Time: 2026-04-16 14:07:57
+
+=== DEVICE INFO ===
+Device index: 14
+Device name: Headset (HY01)
+Device default samplerate: 16000.0
+
+=== RECORDING INFO ===
+Saved wav: audio_analysis_recording.wav
+Sample rate: 16000
+Channels: 1
+Duration: 5.000 s
+Recorded samples: 80000
+
+=== TIME-DOMAIN FEATURES ===
+RMS: 0.123025
+Peak: 1.000000
+Crest factor: 8.128
+Zero crossing rate: 0.125677
+Clipping ratio: 0.000700
+Silence ratio: 0.594638
+
+=== FREQUENCY-DOMAIN FEATURES ===
+Dominant frequency: 459.60 Hz
+Estimated F0: 238.81 Hz
+Spectral centroid: 1525.59 Hz
+Spectral bandwidth: 1405.28 Hz
+Voice band energy ratio (80-4000 Hz): 0.995196
+
+Top spectral peaks:
+  - 459.60 Hz | magnitude=330.4442
+  - 412.80 Hz | magnitude=325.2950
+  - 412.60 Hz | magnitude=318.2020
+  - 459.80 Hz | magnitude=309.5247
+  - 482.00 Hz | magnitude=297.0239
+  - 417.80 Hz | magnitude=292.5599
+  - 481.80 Hz | magnitude=291.4928
+  - 423.60 Hz | magnitude=283.1976
+  - 462.80 Hz | magnitude=280.1878
+  - 419.40 Hz | magnitude=275.8689
+
+=== NOISE ESTIMATION ===
+Noise floor estimate (RMS): 0.000216
+SNR estimate (dB): 55.12
+
+=== INTERPRETATION GUIDE ===
+- RMS quá thấp (< 0.005): mic thu yếu, STT dễ hụt âm.
+- Clipping ratio > 0.01: tín hiệu quá to, có thể méo.
+- Silence ratio quá cao: audio có quá nhiều khoảng yên lặng.
+- Voice band energy ratio càng cao càng tốt cho STT.
+- SNR estimate càng cao càng tốt. Nếu dưới ~10 dB thì môi trường khá ồn.
+- Estimated F0 chỉ là ước lượng tần số cơ bản, không dùng trực tiếp để chỉnh model Whisper.
+- Thứ nên tối ưu cho STT là: đúng mic, audio sạch, mono, 16kHz, ít nhiễu, VAD hợp lý.
